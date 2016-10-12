@@ -16,7 +16,10 @@ public class    DB_Helper extends SQLiteOpenHelper {
                     Contract.Items.COLUMN_NAME_LIST + TEXT_TYPE + COMMA_SEP +
                     Contract.Items.COLUMN_NAME_ITEM + TEXT_TYPE +COMMA_SEP +
                     Contract.Items.COLUMN_NAME_ID + "INTEGER" +COMMA_SEP +
-                    Contract.Items.COLUMN_NAME_QUANTITY + TEXT_TYPE + " )";
+                    Contract.Items.COLUMN_NAME_QUANTITY + TEXT_TYPE + COMMA_SEP +
+                    Contract.Items.COLUMN_NAME_SYNCED + "BOOLEAN" + COMMA_SEP +
+                    Contract.Items.COLUMN_NAME_DELETED + "BOOLEAN" + COMMA_SEP +
+                    Contract.Items.COLUMN_NAME_DELETEREQUESTED + TEXT_TYPE + COMMA_SEP + " )";
 
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + Contract.Items.TABLE_NAME;
